@@ -5,9 +5,7 @@
 FROM ubuntu:18.04 AS installer-env
 
 # Define Args for the needed to add the package
-ARG PS_VERSION=7.2.2-1
-ARG PS_PACKAGE=powershell-lts_${PS_VERSION}-1.deb_amd64.deb
-ARG PS_PACKAGE_URL=https://github.com/PowerShell/PowerShell/releases/download/v${PS_VERSION}/${PS_PACKAGE}
+ARG PS_PACKAGE_URL=https://github.com/PowerShell/PowerShell/releases/download/v7.2.2/powershell-lts_7.2.2-1.deb_amd64.deb
 
 # Define ENVs for Localization/Globalization
 ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false \
