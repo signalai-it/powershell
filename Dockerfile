@@ -56,4 +56,4 @@ RUN apt-get update \
 # Use PowerShell as the default shell
 # Use array to avoid Docker prepending /bin/sh -c
 CMD [ "pwsh" ]
-ENTRYPOINT ["sleep", "3600"]
+ENTRYPOINT ["sh", "-c", "sleep 3600"]
